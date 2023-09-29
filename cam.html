@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+</head>
+
+<body>
+    <div id="qr-reader" style="width: 300px"></div>
+    <h1 id="result"></h1>
+    <script>
+        function onScanSuccess(decodedText, decodedResult) {
+            document.getElementById("result").innerHTML = decodedText;
+        }
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "qr-reader", { fps: 15, qrbox: 200, facingMode: { exact: "environment" } });
+        html5QrcodeScanner.render(onScanSuccess);
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+</head>
+
+<body>
+    <div id="qr-reader"></div>
+    <button id="start-scan">Start Scan</button>
+
+    <script>
+        function onScanSuccess(decodedText, decodedResult) {
+            alert(decodedText);
+        }
+
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "qr-reader", { fps: 15, qrbox: 200, facingMode: { exact: "environment" } });
+
+        var startScanButton = document.getElementById("start-scan");
+        startScanButton.addEventListener("click", function () {
+            html5QrcodeScanner.render(onScanSuccess);
+        });
+    </script>
+</body>
+
+</html>
