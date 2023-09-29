@@ -1,0 +1,34 @@
+ body {
+      /* Set the gradient background */
+      background: linear-gradient(to bottom, #073e5d, #2C5746);
+      /* This ensures the gradient covers the full viewport */
+      height: 100vh;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+#map { 
+  width: 600px; height: 400px; position: relative; margin: 0 auto;
+}
+.navbar {
+  background-color: #073e5d;
+}
+.navbar-brand img {
+    width: 150px; /* Set the desired width */
+    height: auto; /* This will maintain the aspect ratio */
+  }
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffa500; /* Change to your desired hover color */
+}
+.dropdown-menu a.dropdown-item:hover {
+  background-color: #2C5746; /* Change to your desired hover background color */
+  color: white; /* Change to your desired hover text color */
+}
+@media (max-width: 768px) {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+  #map { 
+  width: auto; height: 50%; position: relative; margin: 0 auto;
+}
+}

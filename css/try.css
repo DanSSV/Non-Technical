@@ -1,0 +1,29 @@
+*{
+    font-family: 'poppins', sans-serif;
+}
+
+.wrapper {
+  background: linear-gradient(to bottom,  #2C5746,#073e5d);
+  padding: 0 20px 0 20px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.row {
+  width: 500px;
+  height: 550px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.col-md-6 img {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 200px;
+  height: auto;
+}

@@ -1,0 +1,118 @@
+#map { 
+    height: 100%;
+}
+.loc {
+  width: 100%;
+  margin: 0 auto;
+  height: 50%;
+  /* outline: 1px solid white;
+  outline-offset: +5px; */
+}
+.info {
+  display: flex; justify-content: center;
+}
+h1 {
+    font-size: 50px;
+    color: black !important;
+    font-size: 20px !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    display: inline-block;
+}
+.btn-primary{
+  margin-left: 50%;
+}
+
+
+.backbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  width: 137px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: #273B4A; 
+  border: none; 
+  color: white; 
+  font-size: 16px; 
+  cursor: pointer; 
+  margin-top: 80px;
+}
+.confirm {
+  width: 137px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: #273B4A; 
+  border: none; 
+  color: white; 
+  font-size: 16px; 
+  cursor: pointer; 
+  margin-top: 80px;
+  margin-right: 10px;
+}
+
+.search {
+  
+  top: 10px;
+  /* left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; */
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+#search-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #3b8875;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.back {
+  width: 172px;
+  height: 37px;
+  border-radius: 50px;
+  background-color: #407c87;
+  color: white;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.back:hover {
+  background-color: #3b8875;
+  color: white;
+  outline: 1px solid white;
+  outline-offset: +5px;
+}
+.confirm {
+  width: 172px;
+  height: 37px;
+  border-radius: 50px;
+  background-color: #407c87;
+  color: white;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.confirm:hover {
+  background-color: #3b8875;
+  color: white;
+  outline: 1px solid white;
+  outline-offset: +5px;
+}
