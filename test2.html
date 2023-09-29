@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test2.css">
+    <style>
+        .side-image {
+            background-image: url("<?php echo $imagePath; ?>");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 10px 0 0 10px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            background: #019547;
+            background-repeat: no-repeat;
+            font-family: "Inter", sans-serif;
+            overflow: hidden;
+        }
+
+        header {
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+            color: rgb(6, 148, 65);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="post" action="login.php">
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" class="input" id="email" name="email" required autocomplete="off" />
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" id="password" name="password" required />
+                <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Login" />
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
